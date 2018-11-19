@@ -24,8 +24,8 @@
         <a class="navbar-brand" href="#">Assmnt</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
+            <li><%= link_to "Users", friendships_path  %></li>
+            <li><%= link_to "Stocks", listings_path  %></li>
             <li><% if user_signed_in? %>
                   <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
                 <% else %>
