@@ -25,7 +25,7 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Users", friendships_path  %></li>
-            <li><%= link_to "Stocks", listings_path  %></li>
+            <li><%= link_to "Stocks", search_stocks_path  %></li>
             <li><% if user_signed_in? %>
                   <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
                 <% else %>
@@ -36,7 +36,6 @@
         </div>
       </div>
     </div>
-
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
