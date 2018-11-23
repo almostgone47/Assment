@@ -5,10 +5,12 @@
   <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
   	<div class="form-group row text-center col-md-12">
 	  	<%= text_field_tag :stock, params[:stock], placeholder: "Stock Ticker Symbol", autofocus: true, class: "form-control search-box input-lg" %>
-	  	<%= button_tag "Look up Stock", type: :submit, class: "btn btn-lg btn-success" %>
+	  	<%= button_tag " Look up Stock", type: :submit, class: "btn btn-lg btn-success fa fa-search" %>
   	</div>
   <% end %>
 </div>
 <div id="results">
   <%= render 'users/results' %>
 </div>
+
+<%= render 'stocks/list' %>

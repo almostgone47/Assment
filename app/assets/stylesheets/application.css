@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
@@ -21,6 +22,9 @@
   padding: 0 !important;
 }
 
+.left-padding {
+  padding-left: 15px !important;
+}
 #stock-lookup input[type=text] {
 	width: 80%;
 	float: left;
@@ -29,3 +33,4 @@
 #stock-lookup button {
 	float: right;
 }
+
